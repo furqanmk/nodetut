@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><% include partials/page/head.ejs %></head>
+  <body>
+  	<div class="container">
+  		<h1><%= title %></h1>
+  		<% include partials/page/header.ejs %>
+	    <p>We have the following users: </p>
+		<ul>
+			<% for (index in names) { %>
+				<li><%= names[index] %></li>
+			<% } %>
+		</ul>
+
+		<% include partials/page/footer.ejs %>
+  	</div>
+  	<% include partials/page/jsdefaults.ejs %>
+  </body>
+</html>
+
